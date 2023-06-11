@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<HTML LANG="EN">
+
+<HEAD>
+    <META CHARSET="UTF-8">
+    <META HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EDGE">
+    <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0">
+    <TITLE>LOGIN</TITLE>
+    <LINK REL="ICON" TYPE="IMAGE/X-ICON" HREF="IMAGES/LOGO.JFIF">
+    <LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="CSS/BOOTSTRAP.MIN.CSS">
+</HEAD>
+
+<BODY CLASS="BG-LIGHT">
+    <?PHP INCLUDE 'NAV.PHP'?>
+    <DIV CLASS="CONTAINER">
+        <DIV CLASS="ROW JUSTIFY-CONTENT-CENTER">
+            <DIV CLASS="COL-SM-6 BORDER SHADOW-LG">
+                <DIV CLASS="MT-5 MB-5 FLEX-COLUMN TEXT-CENTER">
+                    <DIV CLASS="MX-AUTO D-BLOCK">
+                        <IMG SRC="IMAGES/LOGO.JFIF" ALT="LOGO" STYLE="WIDTH: 80PX;" CLASS="ROUNDED-PILL">
+                        <H3 CLASS="VOLLKORN">AN ATTRIBUTE BASED ACCESS CONTROLL</H3>
+                    </DIV>
+                    <H4>LOGIN</H4>
+
+                </DIV>
+                <FORM ACTION="LOGIN.PHP" METHOD="POST" CLASS="MB-5 MT-5 ROUNDED-TOP ROUNDED-BOTTOM">
+                    <DIV CLASS="FORM-GROUP">
+                        <LABEL>ENTER YOUR EMAIL</LABEL>
+                        <INPUT TYPE="EMAIL" CLASS="FORM-CONTROL MB-4" PLACEHOLDER="EMAIL" NAME="EMAIL" REQUIRED>
+                    </DIV>
+
+                    <DIV CLASS="FORM-GROUP">
+                        <LABEL>ENTER YOUR PASSWORD</LABEL>
+                        <INPUT TYPE="PASSWORD" CLASS="FORM-CONTROL MB-4" PLACEHOLDER="PASSWORD" NAME="PASSWORD"
+                            REQUIRED>
+                    </DIV>
+
+                    <DIV CLASS="CONTAINER">
+                        <DIV CLASS="ROW JUSTIFY-CONTENT-CENTER">
+                            <DIV CLASS="COL-SM-6">
+                                <BUTTON CLASS="BTN BTN-CONTROL BTN-OUTLINE-INFO BTN-BLOCK COL-SM-4">LOGIN</BUTTON>
+                            </DIV>
+                            <DIV CLASS="COL-SM-6 D-FLEX">
+                                <P CLASS="FLOAT-RIGHT">DON'T HAVE AN ACCOUNT? </P>
+                                <A HREF="REGISTER.PHP" CLASS="SIGNIN">REGISTER</A>
+
+                            </DIV>
+                        </DIV>
+                    </DIV>
+                </FORM>
+            </DIV>
+        </DIV>
+    </DIV>
+</BODY>
+
+</HTML>
